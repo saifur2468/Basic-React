@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TK-101",
+    "title": "Login Loop on Mobile",
+    "description": "User enters credentials and is redirected back to the login page without an error.",
+    "customer": "Global Tech Corp",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01T08:30:00Z"
+  },
+  {
+    "id": "TK-102",
+    "title": "Monthly Invoice Missing",
+    "description": "Customer claims they haven't received the PDF invoice for February billing cycle.",
+    "customer": "Acme Inc.",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-03-01T14:15:00Z"
+  },
+  {
+    "id": "TK-103",
+    "title": "API Rate Limit Error",
+    "description": "Systems are returning 429 errors despite usage being under the documented limit.",
+    "customer": "FinStream LLC",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-03-02T09:00:00Z"
+  },
+  {
+    "id": "TK-104",
+    "title": "Feature Request: Dark Mode",
+    "description": "Requesting a dark theme for the desktop dashboard to reduce eye strain.",
+    "customer": "Sarah Jenkins",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2026-03-02T11:45:00Z"
+  },
+  {
+    "id": "TK-105",
+    "title": "Broken Link in Documentation",
+    "description": "The 'Getting Started' guide links to a 404 page for Python SDK.",
+    "customer": "DevSolutions",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02T16:20:00Z"
+  },
+  {
+    "id": "TK-106",
+    "title": "Database Migration Failure",
+    "description": "Production database sync failed at 02:00 AM. Data integrity check needed.",
+    "customer": "CloudScale",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-03-03T02:10:00Z"
+  },
+  {
+    "id": "TK-107",
+    "title": "Logo Update on Profile",
+    "description": "Client wants to update their company branding across all sub-accounts.",
+    "customer": "Horizon Retail",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-03T08:45:00Z"
+  },
+  {
+    "id": "TK-108",
+    "title": "Performance Lag in UI",
+    "description": "Loading the 'Reports' tab takes over 15 seconds for large datasets.",
+    "customer": "DataViz Partners",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03T10:30:00Z"
+  },
+  {
+    "id": "TK-109",
+    "title": "Password Reset Email Delay",
+    "description": "Users reporting it takes up to 2 hours to receive the recovery link.",
+    "customer": "Individual User",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-03T11:15:00Z"
+  },
+  {
+    "id": "TK-110",
+    "title": "GDPR Data Export Request",
+    "description": "Customer requested a full dump of their personal data per privacy regulations.",
+    "customer": "Mark Thompson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03T13:00:00Z"
+  },
+  {
+    "id": "TK-111",
+    "title": "Integration Auth Failure",
+    "description": "Slack notification bot disconnected and won't re-authenticate.",
+    "customer": "Slackers United",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-03-03T14:50:00Z"
+  },
+  {
+    "id": "TK-112",
+    "title": "Payment Gateway Timeout",
+    "description": "Checkout page hangs during the 'Processing' phase for Stripe payments.",
+    "customer": "ShopQuick",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-03-03T15:25:00Z"
+  }
+]
