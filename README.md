@@ -1,16 +1,34 @@
-# React + Vite
+## 1️ JSX
+- JSX = JavaScript + HTML মতো syntax
+- UI structure সহজে লিখতে এবং React DOM update করতে ব্যবহৃত হয়
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 2️ State এবং Props
+| Feature | State | Props |
+|---------|-------|-------|
+| মান | Mutable (পরিবর্তনযোগ্য) | Immutable (পরিবর্তন অযোগ্য) |
+| কোথা থেকে আসে | Component ভিতর | Parent থেকে Child এ passed |
+| ব্যবহার | Dynamic data | Parent থেকে data পাঠাতে |
 
-Currently, two official plugins are available:
+## 3️ useState Hook
+- Functional component-এ state ব্যবহার করার জন্য hook
+- Syntax: 
+```js
+const [state, setState] = useState(initialValue);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+setState দিয়ে value update করলে component auto re-render হয়
 
-## React Compiler
+# 4️ State Share করার উপায়
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Lift state up → common parent-এ রাখা, props দিয়ে পাঠানো
 
-## Expanding the ESLint configuration
+Context API → global-like state, prop drilling এড়াতে
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+ # 5️ Event Handling React-এ
+
+Event নাম camelCase: onClick, onChange
+
+Function pass করতে হবে, string নয়
+
+Prevent default: e.preventDefault()
