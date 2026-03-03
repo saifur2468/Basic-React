@@ -16,10 +16,10 @@ const [state, setState] = useState(initialValue);
 ]
 setState দিয়ে value update করলে component auto re-render হয়
 
-## State Share করার উপায়
+## 4 State Share করার উপায়
 Lift state up → common parent-এ রাখা, props দিয়ে পাঠানো
 Context API → global-like state, prop drilling এড়াত
-## Event Handling React 
+## 5 Event Handling React 
 Event নাম camelCase: onClick, onChange
 Function pass করতে হবে, string নয়
 Prevent default: e.preventDefault()
