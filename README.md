@@ -10,25 +10,16 @@
 | ব্যবহার | Dynamic data | Parent থেকে data পাঠাতে |
 
 ## 3️ useState Hook
-- Functional component-এ state ব্যবহার করার জন্য hook
-- Syntax: 
-```js
+- Functional component-এ state ব্যবহার করার জন্য hook use করা হয় 
+ useState Syntax:[
 const [state, setState] = useState(initialValue);
-
+]
 setState দিয়ে value update করলে component auto re-render হয়
 
-# 4️ State Share করার উপায়
-
+## State Share করার উপায়
 Lift state up → common parent-এ রাখা, props দিয়ে পাঠানো
-
-Context API → global-like state, prop drilling এড়াতে
-
-
-
- # 5️ Event Handling React-এ
-
+Context API → global-like state, prop drilling এড়াত
+## Event Handling React 
 Event নাম camelCase: onClick, onChange
-
 Function pass করতে হবে, string নয়
-
 Prevent default: e.preventDefault()
