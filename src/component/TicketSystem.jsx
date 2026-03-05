@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { BsCalendar2DateFill } from 'react-icons/bs';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import TicketStats from '../component/Herosection';
+import TicketStats from './TicketStats';
 
 const TicketSystem = () => {
   const [tickets, setTickets] = useState([]);
   const [inProgress, setInProgress] = useState([]);
   const [resolvedTasks, setResolvedTasks] = useState([]);
 
-  // Public folder থেকে data load
+  
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -44,7 +44,6 @@ const TicketSystem = () => {
     <div className="bg-[#f8fafc] min-h-screen p-4 sm:p-6 md:p-10 font-sans text-[#334155]">
       <ToastContainer />
 
-      {/* Hero Section */}
       <div className="max-w-7xl mx-auto mb-6 md:mb-10 px-2 sm:px-0">
         <TicketStats 
           inProgressCount={inProgress.length} 
@@ -53,7 +52,7 @@ const TicketSystem = () => {
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 lg:gap-10 px-2 sm:px-0">
-        {/* Left Side: Customer Tickets */}
+       
         <div className="lg:w-3/4">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-[#1e293b]">Customer Tickets</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-5">
@@ -90,9 +89,8 @@ const TicketSystem = () => {
           </div>
         </div>
 
-        {/* Right Side: Task Status & Resolved */}
         <div className="lg:w-1/4 space-y-6 sm:space-y-8 mt-6 lg:mt-0">
-          {/* Task Status */}
+         
           <div>
             <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Task Status</h2>
             {inProgress.length === 0 ? (
@@ -114,7 +112,7 @@ const TicketSystem = () => {
             )}
           </div>
 
-          {/* Resolved Task */}
+         
           <div>
             <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Resolved Task</h2>
             {resolvedTasks.length === 0 ? (

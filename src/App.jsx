@@ -1,8 +1,8 @@
 
 import './App.css'
 import Footer from './component/Footer'
-import TicketStats from './component/Herosection'
-import TicketSystem from './component/Mainlayout'
+import TicketStats from './component/TicketStats'
+import TicketSystem from './component/TicketSystem'
 import Navbar from './Component/Navbar'
 
 function App() {
